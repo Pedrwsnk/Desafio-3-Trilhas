@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head class="cabecalho">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="login.html" class="voltar">← Voltar</a>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main class="apresentacao">
+        <form id="form-inscricao" action="#" method="post" enctype="multipart/form-data">
+            <h1>Formulário de Inscrição</h1>
+            <p class="apresentacao__titulo__texto">Preencha os dados abaixo para fazer sua inscrição no Programa
+                Trilhas.</p>
+
+            <h2>Informações do participante</h2>
+
+            <label>Nome completo</label>
+            <input class="campo-preencher" type="text" id="campo-nome" name="campo-nome" required>
+
+            <label>Data de nascimento</label>
+            <input class="campo-preencher" type="date" id="campo-data" name="campo-data" required>
+
+            <label>CPF</label>
+            <input class="campo-preencher" type="text" id="campo-cpf" name="campo-cpf" required pattern="\d{11}"
+                title="Digite apenas os 11 números do CPF">
+
+
+            <label>Sexo</label>
+            <select class="campo-preencher" name="campo-sexo" required>
+                <option value="">Selecione</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+            </select>
+
+            <label>E-mail</label>
+            <input class="campo-preencher" type="email" name="campo-email" id="campo-email"
+                placeholder="seuemail@exemplo.com" required>
+
+            <label>Telefone</label>
+            <input class="campo-preencher" type="tel" id="campo-telefone" name="campo-telefone" required
+                pattern="\d{11}" title="Digite todos os 11 números do Telefone">
+
+            <label>Documento de identidade</label>
+            <input type="file" class="campo-preencher" name="documento-identidade" required>
+
+            <h2>Endereço residencial</h2>
+
+            <label>CEP</label>
+            <input class="campo-preencher" type="text" id="campo-cep" name="campo-cep" required>
+
+            <label>Rua</label>
+            <input class="campo-preencher" type="text" id="campo-rua" name="campo-rua" required>
+
+            <label>Número</label>
+            <input class="campo-preencher" type="text" id="campo-numero" name="campo-numero" required>
+
+            <label>Cidade</label>
+            <input class="campo-preencher" type="text" id="campo-cidade" name="campo-cidade" required>
+
+            <label>Estado</label>
+            <input class="campo-preencher" type="text" id="campo-estado" name="campo-estado" required>
+
+            <label>Comprovante de residência</label>
+            <input type="file" class="campo-preencher" name="comprovante-residencia" required>
+
+            <h2>Trilhas de Aprendizado</h2>
+            <p class="apresentacao__titulo__texto">Selecione apenas uma trilha</p>
+
+            <div class="trilhas">
+                <label class="trilha">
+                    <input type="radio" name="trilha" value="front-end" required>
+                    <span class="checkmark">✔</span>
+                    <img src="assets/trilha 1.PNG" alt="front-end">
+                    <p>Programação Front-end</p>
+                </label>
+
+                <label class="trilha">
+                    <input type="radio" name="trilha" value="back-end" required>
+                    <span class="checkmark">✔</span>
+                    <img src="assets/trilha 2.PNG" alt="back-end">
+                    <p>Programação Back-end</p>
+                </label>
+
+                <label class="trilha">
+                    <input type="radio" name="trilha" value="jogos" required>
+                    <span class="checkmark">✔</span>
+                    <img src="assets/trilha 3.PNG" alt="jogos">
+                    <p>Programação de Jogos</p>
+                </label>
+
+                <label class="trilha">
+                    <input type="radio" name="trilha" value="design" required>
+                    <span class="checkmark">✔</span>
+                    <img src="assets/trilha 4.PNG" alt="design">
+                    <p>Design e Experiência</p>
+                </label>
+
+                <label class="trilha">
+                    <input type="radio" name="trilha" value="dados" required>
+                    <span class="checkmark">✔</span>
+                    <img src="assets/trilha 5.PNG" alt="dados">
+                    <p>Ciência de Dados</p>
+                </label>
+            </div>
+
+            <div class="termosecondicoes">
+                <input type="checkbox" id="termos" required>
+                <label for="termos">
+                    Declaro que li e concordo com os <a href="#">Termos e Condições</a> e com a
+                    <a href="#">Política de Privacidade</a>.
+                </label>
+            </div>
+
+            <footer class="botoes">
+                <button class="btn cancelar" type="reset">Cancelar</button>
+                <button class="btn inscrever" type="submit">Fazer inscrição</button>
+            </footer>
+        </form>
+    </main>
+
+</body>
+
+</html>

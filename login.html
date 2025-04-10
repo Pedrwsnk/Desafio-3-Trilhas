@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trilhas</title>
+    <link rel="stylesheet" href="login.css">
+    <a href="Capa.html" class="voltar">← Voltar</a>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Entrar</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" required>
+            </div>
+            <a href="index.html">
+                <button type="submit" class="login-btn">Login</button>
+            </a>
+            <div class="error-message" id="errorMessage"></div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>
